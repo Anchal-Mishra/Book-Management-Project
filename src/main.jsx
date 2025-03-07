@@ -7,6 +7,7 @@ import Error from './components/Error.jsx'
 import {createBrowserRouter , RouterProvider} from "react-router-dom"
 import BookList from './components/BookList.jsx'
 import BookDetails from './components/BookDetails.jsx'
+import Cart from './components/Cart.jsx'
 
 
 const appRouter=createBrowserRouter([
@@ -33,6 +34,10 @@ const appRouter=createBrowserRouter([
       {
         path:"/book/:id",
         element:<BookDetails/>
+      },
+      {
+        path:"/cart",
+        element:<Cart/>
       }
 
     ],

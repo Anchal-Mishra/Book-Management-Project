@@ -5,10 +5,10 @@ import { Outlet } from "react-router-dom"
 function App() {
  
   return (
-    <>
+    <div className="bg-blue-100">
       <Header/>
       <Outlet/>
-    </>
+    </div>
   )
 }
 
